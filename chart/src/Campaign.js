@@ -34,7 +34,7 @@ export default Campaign = {
     }
   ],
   "beatBy":1.1,
-  "months":12,
+  "months":6,
   "target":1,
   "campaignUrl":"cuervogold.com",
   "suggestMedium":79,

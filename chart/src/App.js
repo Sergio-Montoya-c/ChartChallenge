@@ -25,7 +25,7 @@ class App extends Component {
         backgroundColor: '#dadada',
         borderColor: '#ccc',
         borderWidth: 2,
-        data: monthsArray.map(month => { return campaignTotal * (month + 1) })
+        data: monthsArray.map(month => { return Math.ceil(campaignTotal * (month + 1)) })
       }
     });
 
@@ -35,7 +35,7 @@ class App extends Component {
       backgroundColor: '#478FFF',
       borderColor: '#214275',
       borderWidth: 2,
-      data: monthsArray.map(month => { return ownCampaignTotal * (month + 1) })
+      data: monthsArray.map(month => { return Math.ceil(ownCampaignTotal * (month + 1)) })
     }
 
     competitorsDataset = [...competitorsDataset, ownDataset];
